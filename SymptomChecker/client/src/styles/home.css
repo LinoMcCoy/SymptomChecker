@@ -151,3 +151,17 @@
     background-color: aliceblue;
     color: rgb(80, 179, 80);
 }
+
+.contactCard{
+    background-color: #8EAC50;
+    color:white;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px;
+    margin-top: 50px;
+
+}
+

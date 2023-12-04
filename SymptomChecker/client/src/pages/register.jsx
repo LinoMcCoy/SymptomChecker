@@ -1,4 +1,6 @@
 //import { Link } from "react-router-dom"
+
+/*
 import '../styles/login.css'
 import {useForm} from 'react-hook-form'
 import { instance as axios } from '../api/axios';
@@ -39,3 +41,4 @@ const Register = () => {
 }
 
 export default Register
+*/

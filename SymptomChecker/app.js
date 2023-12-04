@@ -1,6 +1,7 @@
 import express from "express";
 import { connectDB } from "./db.js";
 import router from "./routes/user.js";
+import diagnosis from "./routes/diagnosis.js";
 import cors from "cors";
 import morgan from "morgan";
 
@@ -14,6 +15,7 @@ app.use(morgan("dev")); //mostrar las peticiones en consola
 app.use(express.json());
 
 app.use("/", router);
+app.use("/diagnosis", diagnosis);
 
 app.get("/", (req, res) => {
     res.status(200).json({msg: "ok"})
