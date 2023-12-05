@@ -5,8 +5,6 @@ import axios from "axios";
 const tokenAPI = process.env.API_TOKEN;
 const diagnosis = Router();
 
-
-
 diagnosis.post ("/symptoms", async(req, res) =>{
 
 const params = new URLSearchParams([["token", tokenAPI],["language", "en-gb"], ["format", "json"]]);
@@ -18,7 +16,7 @@ axios
 .then ((response) => {
     var data = response.data;
     console.log(data);
-    
+    res.json(data);
 })
 
 });
