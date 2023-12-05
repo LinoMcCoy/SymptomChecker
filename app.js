@@ -8,11 +8,12 @@ import morgan from "morgan";
 const app = express()
 const PORT = process.env.PORT || 5000;
 
+
 app.use(cors({
     origin: "*"
 }));
 app.use(morgan("dev")); //mostrar las peticiones en consola
-app.use(express.json());
+
 
 app.use("/", router);
 app.use("/diagnosis", diagnosis);
