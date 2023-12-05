@@ -6,8 +6,12 @@ import cors from "cors";
 import morgan from "morgan";
 
 const app = express()
+const express = require("express");
+const path = require("path");
 const PORT = process.env.PORT || 5000;
 
+app.use(express.json());
+//app.use(express.urlencoded((extended: true)));
 
 app.use(cors({
     origin: "*"
